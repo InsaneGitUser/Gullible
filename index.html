@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gullible</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: black;
+        color: white;
+      }
+      h1 {
+        font-size: xx-large;
+      }
+      #second-h1 {
+        display: none;
+      }
+    </style>
+    <script>
+      // Wait for DOM to fully load
+      document.addEventListener('DOMContentLoaded', function() {
+        setTimeout(function() {
+          document.getElementById('first-h1').style.display = 'none';
+          document.getElementById('second-h1').style.display = 'block';
+        }, 1500);
+      });
+    </script>
+  </head>
+  <body>
+    <h1 id="first-h1">Gullible</h1>
+    <h1 id="second-h1">You rn:😭</h1>
+  </body>
+</html>
